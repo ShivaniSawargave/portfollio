@@ -1,0 +1,307 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.nav-link {
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ff69b4; 
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link.active::after,
+.nav-link:hover::after {
+  width: 100%;
+}
+.underline-animate {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.underline-animate::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.2s ease, right 0.2s ease;
+}
+
+.underline-animate:hover::after,
+.underline-animate.active::after {
+  width: 80%;
+}
+
+.main h3 {
+  font-size: 3.0rem;
+  font-weight: 700;
+}
+
+.main .color {
+  color: rgb(224, 15, 102);
+}
+
+
+.about h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.about {
+  background-color: rgb(197, 195, 195);
+}
+
+.about img {
+  -webkit-box-shadow: 6px 4px 29px -14px rgba(0, 0, 0, 0.95);
+  -moz-box-shadow: 6px 4px 29px -14px rgba(0, 0, 0, 0.95);
+  box-shadow: 6px 4px 29px -14px rgba(0, 0, 0, 0.95);
+}
+
+.about span {
+  font-weight: bold;
+}
+
+.about .progress span {
+  font-weight: bold;
+  float: inline-end;
+}
+
+.about .progress {
+  background-color: rgb(190, 183, 183);
+  justify-content: flex-start;
+  border-radius: 50px;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 25px;
+  width: 100%;
+  -webkit-box-shadow: inset 1px -3px 176px -97px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 1px -3px 176px -97px rgba(0, 0, 0, 0.95);
+  box-shadow: inset 1px -3px 176px -97px rgba(0, 0, 0, 0.95);
+}
+
+.pro-value1 {
+  animation: load1 3s normal forwards;
+  border-radius: 50px;
+  background-color: black;
+  height: 45px;
+  width: 0;
+}
+
+.pro-value2 {
+  animation: load2 3s normal forwards;
+  border-radius: 50px;
+  background-color: black;
+  height: 45px;
+  width: 0;
+}
+
+.pro-value3 {
+  animation: load3 3s normal forwards;
+  border-radius: 50px;
+  background-color: black;
+  height: 45px;
+  width: 0;
+}
+
+.pro-value4 {
+  animation: load4 3s normal forwards;
+  border-radius: 50px;
+  background-color: black;
+  height: 45px;
+  width: 0;
+}
+
+.progress p {
+  color: white;
+  padding: 12px;
+}
+
+@keyframes load1 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 95%;
+  }
+}
+
+@keyframes load2 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes load3 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 98%;
+  }
+}
+
+@keyframes load4 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 85%;
+  }
+}
+
+.btn1 {
+  height: 40px;
+  width: 145px;
+  outline: none;
+  border: none;
+  background-color: rgb(196, 57, 115);
+  color: white;
+  border-radius: 4px;
+
+}
+
+.btn1:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+
+
+.card {
+  border: none;
+  outline: none;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card p {
+  color: gray;
+}
+
+.circle {
+  height: 70px;
+  width: 70px;
+  background-color: lightgray;
+  color: black;
+  padding: 12px;
+  font-size: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.circle:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+.contact {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+input,
+textarea {
+  -webkit-box-shadow: inset 1px -3px 176px -97px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 1px -3px 176px -97px rgba(0, 0, 0, 0.95);
+  box-shadow: inset 1px -3px 176px -97px rgba(0, 0, 0, 0.95);
+}
+
+.certificate-card img {
+  padding: 15px;
+  border-radius: 10px;
+  object-fit: contain;
+  height: 200px;
+  width: 100%;
+}
+
+
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.education-section {
+  padding: 60px 0;
+}
+
+.education-card {
+  margin-bottom: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.header-section {
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/024/269/342/small_2x/graduation-cap-with-earth-globe-concept-of-global-business-study-abroad-educational-back-to-school-education-in-global-world-study-abroad-business-in-universities-in-worldwide-language-study-photo.jpg);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.education-section .circle1 {
+  height: 90px;
+  width: 90px;
+  background-color: lightgray;
+  color: black;
+  padding: 12px;
+  font-size: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 20px;
+  text-align: center;
+  background-image: url(12.png);
+  background-size: cover;
+}
+
+.education-section .circle2 {
+  height: 90px;
+  width: 90px;
+  background-color: lightgray;
+  color: black;
+  padding: 12px;
+  font-size: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 20px;
+  text-align: center;
+  background-image: url(degree.png);
+  background-size: cover;
+}
